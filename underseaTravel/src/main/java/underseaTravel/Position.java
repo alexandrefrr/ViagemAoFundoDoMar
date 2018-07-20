@@ -12,14 +12,6 @@ public class Position {
 	private int x, y, z;
 	private Direction direction = Direction.NORTE;
 
-	
-//	public Position(int x, int y, int z, Direction direction) {
-//		this.x = x;
-//		this.z = z;
-//		this.z = z;
-//		this.setDirection(direction);
-//	}
-	
 	public int getX() {
 		return x;
 	}

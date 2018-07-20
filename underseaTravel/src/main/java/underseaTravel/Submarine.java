@@ -12,8 +12,18 @@ public class Submarine {
 		this.position = position;
 	}
 	
-	
+	public void move(String commands) {
+		if (commands != null && !commands.isEmpty()) {
+			char[] commandsCharArray = commands.toCharArray();
+			executeCommands(commandsCharArray);
+		}
+	}
 
-	
-	
+	private void executeCommands(char[] commandsCharArray) {
+		for (char command : commandsCharArray) {
+			// decidir aqui o que cada comando faz (fazer um switch-case) 
+			System.out.println("comando: " + command);
+		}
+	}
+
 }
