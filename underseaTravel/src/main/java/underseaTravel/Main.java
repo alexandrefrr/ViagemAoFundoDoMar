@@ -13,10 +13,17 @@ public class Main {
 			String input = JOptionPane.showInputDialog("Digite as coordenadas para o submarino");
 			submarine.move(input);
 			
-			String message = "A posição do submarino é: \n"
-					+ submarine.getPosition()
-					+ "\n\n\n deseja enviar novas coordenadas?";
+			String errorMsg = submarine.getErrorMessage();
 			
+			StringBuilder message = new StringBuilder()
+				.append("A posição do submarino é: \n\n")
+				.append(submarine.getPosition());
+			
+			if(errorMsg != null) {
+				message.append("\n\n Erro: ").append(errorMsg);
+			}
+			message.append("\n\n\n deseja enviar novas coordenadas?");
+						
 			int dialogResult = JOptionPane.showConfirmDialog(null, message, "Resultado", JOptionPane.YES_NO_OPTION);
 			
 			if(dialogResult == JOptionPane.NO_OPTION) {

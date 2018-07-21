@@ -1,11 +1,12 @@
 package underseaTravel;
 
+
 public class Position {
 	
-	public enum Direction {
+	public static enum Direction {
 		NORTE,
-		SUL,
 		LESTE,
+		SUL,
 		OESTE;
 	}
 	
@@ -41,7 +42,8 @@ public class Position {
 	}
 
 	public void setDirection(Direction direction) {
-		this.direction = direction;
+		if (direction != null)
+			this.direction = direction;
 	}
 	
 	@Override

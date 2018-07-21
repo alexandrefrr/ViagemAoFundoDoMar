@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
-Built-By: Arnaldo
-Build-Jdk: 1.8.0_31
+Built-By: Alexandre
+Build-Jdk: 1.8.0_171
 Created-By: Maven Integration for Eclipse
+Main-Class: underseaTravel.Main
 
